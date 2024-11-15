@@ -3,23 +3,18 @@
     --cor_1: #F0D9D1;
     --cor_2: #DDB7AC ;
     --cor_3: #999B85;
+    --COR_4: #e28ac0;
 }
 main{
     grid-area: prin;
     background-color: var(--cor_1);
-    display: flex;
-    justify-content: center;
+    padding: 60px;
 }
 
 
 header{
     grid-area: cabe;
     background-color: var(--cor_3);
-
-}
-footer{
-    grid-area: roda;
-    background-color: var(--cor_2);
 
 }
  *{/* tirar a borda branca do site */
@@ -30,17 +25,12 @@ body{/* tem grid */
     display: grid;
     grid-template-areas:
     " cabe "
-    " prin "
-    " roda ";
+    " prin ";
     grid-template-columns: auto;
-    grid-template-rows: 210px 540px 210px;
-    background-color: var(--cor_fundo);
-    border: var(--cor_3);
- 
+    grid-template-rows: 210px 750 auto;
+    background-color: #F0D9D1;
 }
-.caixa{
-    background-color: var(--cor_1);
-}
+
 
 
 
@@ -84,7 +74,10 @@ body{/* tem grid */
 
 
 .boxtexto{/* centralizar o texto do main*/
-    width: 70%;
+    width: 1020px;
+    text-align: center;
+    align-items: center;
+    margin-left: 145px;
 }
 
 .titulo{/* para deixar os titulos no meio */
@@ -111,35 +104,58 @@ nav a{
 }
 
 
-
-
-
-
-
-/* configurações dos links dos instas */
-footer a:hover{
-    font-size: 1.1rem;
-    color: white; 
-    border: solid rgb(0 , 0, 0); 
-    background: black; 
-}
-footer li{
-    display: inline;
-    margin: 0 0 0 100px;
-    margin-top: 8%;
-}
-footer li{
-    display: inline;
-    position:relative;
-    align-items: center;
-}
-footer{
+#tabela{
+    box-shadow: 3px 3px 3px black;
     text-align: center;
-    display: flex;
-    position: relative;
+    align-items: center;
+    margin-left: 290px;
 }
-footer a{
-    text-decoration: none; 
-    font-size: 1.1rem;
-    color: rgb(2, 2, 2);
+
+
+
+table{
+    width: min(100%, 800px);
+    table-layout: fixed;
+    margin-top: 50px;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+th,td{
+    padding: 16px  24px;
+}
+
+thead th{
+    color: black;
+    width: 25%;
+}
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+tbody tr:nth-child(even){
+    background-color: var(--cor_1);
+}
+
+
+
+
+
+
+
+
+.botao{
+    background-color: var(--cor_2);
+    border-radius: 30%;
+    box-shadow: 3px 3px 5px black;
+}
+
+
+.box{
+    text-align: center;
 }
