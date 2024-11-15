@@ -1,4 +1,4 @@
-:root{
+:root{/* colorcode*/
     --cor_fundo: #F4EFEC;
     --cor_1: #F0D9D1;
     --cor_2: #DDB7AC ;
@@ -6,7 +6,6 @@
 }
 main{
     grid-area: prin;
-    border: purple solid 2px;
     background-color: var(--cor_1);
     display: flex;
     justify-content: center;
@@ -23,11 +22,11 @@ footer{
     background-color: var(--cor_2);
 
 }
- *{
+ *{/* tirar a borda branca do site */
     margin: 0%;
     padding: 0%;
  }
-body{
+body{/* tem grid */
     display: grid;
     grid-template-areas:
     " cabe "
@@ -47,7 +46,7 @@ body{
 
 
 
-.logo{
+.logo{/*dimensoes da logo*/
     width: auto;
     height: 200px;
     padding: 6px;
@@ -57,12 +56,93 @@ body{
 
 
 
+.grafico{/* imagem dos links que direcionam para a outra pagina*/
+    width: 150px;
+    height: 70px;
+    padding: 6px;
+    border-radius: 25px;
+    margin-right: 40px;
+}
+.pag1{/* imagem dos links que direcionam para a outra pagina*/
+    width: 150px;
+    height: 70px;
+    padding: 6px;
+    border-radius: 25px;
+    margin-right: 40px;
+}
+.tabela{/* imagem dos links que direcionam para a outra pagina*/
+    width: 150px;
+    height: 70px;
+    padding: 6px;
+    border-radius: 25px;
+    margin-right: 40px; 
+}
 
 
-.boxtexto{
+
+
+
+
+.boxtexto{/* centralizar o texto do main*/
     width: 70%;
 }
 
-.titulo{
+.titulo{/* para deixar os titulos no meio */
     text-align: center;
+}
+
+
+
+
+
+
+nav{/* configurações dos links das paginas */
+    display: flex;/* para ser flexivel*/
+    position: absolute;
+    top: 70px;
+    margin-left: 900px;
+    border-radius: 30px;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+/* configurações dos links dos instas */
+footer a:hover{
+    font-size: 1.1rem;
+    color: white; 
+    border: solid rgb(0 , 0, 0); 
+    background: black; 
+}
+footer li{
+    display: inline;
+    margin: 0 0 0 200px;
+    margin-top: 8%;
+}
+footer li{
+    display: inline;
+    position:relative;
+    align-items: center;
+}
+footer{
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+footer a{
+    text-decoration: none; 
+    font-size: 2.1rem;
+    color: rgb(2, 2, 2);
+    border: solid rgb(0, 0, 0, 0 );
+    background-color: aquamarine;
+    transition: 1s;
 }
